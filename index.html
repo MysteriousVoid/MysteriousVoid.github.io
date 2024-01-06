@@ -746,7 +746,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web design</button>
+              <button data-filter-btn>Data Science</button>
             </li>
 
             <li class="filter-item">
@@ -754,7 +754,7 @@
             </li>
 
             <li class="filter-item">
-              <button data-filter-btn>Web development</button>
+              <button data-filter-btn>Product Management</button>
             </li>
 
           </ul>
@@ -778,7 +778,7 @@
               </li>
 
               <li class="select-item">
-                <button data-select-item>Web design</button>
+                <button data-select-item>Data Science</button>
               </li>
 
               <li class="select-item">
@@ -795,7 +795,7 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="product management">
               
 
                 <figure class="project-img">
@@ -803,14 +803,41 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/project-1.jpg" alt="Low code apps" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
+                <h3 class="project-title">Low code apps</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Product Management</p>
 
-             
+                <button id="showButtonlca" onclick="showDetails('lca')">Show Details</button>
+                
+            
+                <div id="projectDetailslca">
+                    
+                    <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                    
+                    <!-- Add more details as needed -->
+
+
+                    <button id="hideButtonlca" onclick="hideDetails('lca')">Hide Details</button>
+                </div>
+            
+                <script>
+                  function showDetails(id) {
+                      event.preventDefault(); // Prevent the webpage from reloading
+                      document.getElementById("projectDetails"+id).style.display = "block";
+                      document.getElementById("showButton"+id).style.display = "none";
+                      document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
+                  }
+          
+                  function hideDetails(id) {
+                      event.preventDefault(); // Prevent the webpage from reloading
+                      document.getElementById("projectDetails"+id).style.display = "none";
+                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
+                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
+                  }
+              </script>
 
             </li>
             
@@ -828,25 +855,40 @@
                 <h3 class="project-title">Orizon</h3>
 
                 <p class="project-category">Web development</p>
-                
 
                 <button id="showButtonorizon" onclick="showDetails('orizon')">Show Details</button>
                 
             
-                <div id="projectDetails">
+                <div id="projectDetailsorizon">
                     
                     <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
                     
                     <!-- Add more details as needed -->
-                    <button id="hideButton" onclick="hideDetails()">Hide Details</button>
+
+
+                    <button id="hideButtonorizon" onclick="hideDetails('orizon')">Hide Details</button>
                 </div>
             
-               
+                <script>
+                  function showDetails(id) {
+                      event.preventDefault(); // Prevent the webpage from reloading
+                      document.getElementById("projectDetails"+id).style.display = "block";
+                      document.getElementById("showButton"+id).style.display = "none";
+                      document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
+                  }
+          
+                  function hideDetails(id) {
+                      event.preventDefault(); // Prevent the webpage from reloading
+                      document.getElementById("projectDetails"+id).style.display = "none";
+                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
+                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
+                  }
+              </script>
               
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <a href="#" >
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -873,12 +915,14 @@
             
                 <script>
                   function showDetails(id) {
-                      document.getElementById("projectDetails"+id).style.display = "block";
-                      document.getElementById("showButton"+id).style.display = "none";
-                      document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
+                    event.preventDefault(); // Prevent the webpage from reloading
+                    document.getElementById("projectDetails"+id).style.display = "block";
+                    document.getElementById("showButton"+id).style.display = "none";
+                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
                   }
           
                   function hideDetails(id) {
+                      event.preventDefault(); // Prevent the webpage from reloading
                       document.getElementById("projectDetails"+id).style.display = "none";
                       document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
                       document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
@@ -907,7 +951,22 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <a href="#" onclick="toggleFullScreen(this)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+                <h3 class="project-title">DSM.</h3>
+                <p class="project-category">Web design</p>
+              </a>
+
+              <script>
+                function toggleFullScreen(element) {
+                  element.classList.toggle("full-screen");
+                }
+              </script>
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
