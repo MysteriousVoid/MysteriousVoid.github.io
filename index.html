@@ -951,7 +951,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#" onclick="toggleFullScreen(this)">
+              <a href="#" onclick="openPopup()">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -961,10 +961,12 @@
                 <h3 class="project-title">DSM.</h3>
                 <p class="project-category">Web design</p>
               </a>
+              </li>
 
               <script>
-                function toggleFullScreen(element) {
-                  element.classList.toggle("full-screen");
+                function openPopup() {
+                  // show image
+                  document.querySelector('.project-img img').style.display = "block";
                 }
               </script>
 
