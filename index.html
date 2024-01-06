@@ -181,9 +181,9 @@
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
-          <li class="navbar-item">
+          <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
+          </li> -->
 
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
@@ -796,7 +796,7 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="#" onclick="showDetails('Finance')">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -811,6 +811,57 @@
                 <p class="project-category">Web development</p>
 
               </a>
+
+              <!-- Add the modal component -->
+              <div id="projectModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2 id="projectName"></h2>
+                  <p id="projectDescription"></p>
+                </div>
+              </div>
+
+              <script>
+                function showDetails(projectName) {
+                  // Get the modal element
+                  var modal = document.getElementById("projectModal");
+                  
+                  // Get the close button element
+                  // var closeButton = modal.querySelector(".close");
+                  
+                  // Get the project name and description elements
+                  var projectNameElement = modal.querySelector("#projectName");
+                  var projectDescriptionElement = modal.querySelector("#projectDescription");
+                  
+                  // Set the project name and description
+                  // projectNameElement.textContent = projectName;
+                  projectDescriptionElement.textContent = "Add the project description here.";
+                  
+                  // Show the modal when the user clicks on the project
+                  // try out different display values
+                  // modal.style.display = "flex";
+                  // modal.style.display = "inline";
+                  // modal.style.display = "inline-block";
+                  // modal.style.display = "inline-flex";
+                  // modal.style.display = "inline-table";
+                  // modal.style.display = "contents";
+                  // modal.style.display = "grid";
+                  // modal.style.display = "inherit";
+                  // modal.style.display = "initial";
+                  // modal.style.display = "list-item";
+                  // modal.style.display = "none";
+                  // modal.style.display = "run-in";
+
+                  modal.style.display = "block";
+                  
+                  // Close the modal when the user clicks anywhere on projectModal
+                  modal.onclick = function(event) {
+                    
+                      modal.style.display = "none";
+                    
+                  }
+                }
+              </script>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
@@ -971,7 +1022,7 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <!-- <article class="blog" data-page="blog">
 
         <header>
           <h2 class="h2 article-title">Blog</h2>
@@ -985,20 +1036,20 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/blog-1.jpg" alt="Low Code Apps" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Product Management</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Feb, 2023</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Low Code Apps</h3>
 
                   <p class="blog-text">
                     Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
@@ -1013,20 +1064,20 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/blog-2.jpg" alt="Marketing Analytics" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Product Management</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Aug, 2021</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">Marketing Analytics</h3>
 
                   <p class="blog-text">
                     Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
@@ -1041,20 +1092,20 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  <img src="./assets/images/blog-3.jpg" alt="Voice of Customer" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Data Science</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Nov, 2020</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <h3 class="h3 blog-item-title">Voice of Customer</h3>
 
                   <p class="blog-text">
                     Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
@@ -1069,20 +1120,20 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                  <img src="./assets/images/blog-4.jpg" alt="Fleet Management" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Data Science</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Nov, 2023</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                  <h3 class="h3 blog-item-title">Fleet Management</h3>
 
                   <p class="blog-text">
                     Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
@@ -1097,20 +1148,20 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                  <img src="./assets/images/blog-5.jpg" alt="Predictive Maintenance" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Machine Learning</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Nov, 2023</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                  <h3 class="h3 blog-item-title">Predictive Maintenance</h3>
 
                   <p class="blog-text">
                     Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -1125,20 +1176,20 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                  <img src="./assets/images/blog-6.jpg" alt="Pricing Governance" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Governance</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Mar, 2022</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+                  <h3 class="h3 blog-item-title">Pricing Governance</h3>
 
                   <p class="blog-text">
                     Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
@@ -1153,7 +1204,7 @@
 
         </section>
 
-      </article>
+      </article> -->
 
 
 
