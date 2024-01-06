@@ -796,7 +796,7 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#" onclick="showDetails('Finance')">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -810,62 +810,12 @@
 
                 <p class="project-category">Web development</p>
 
-              </a>
+             
 
-              <!-- Add the modal component -->
-              <div id="projectModal" class="modal">
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <h2 id="projectName"></h2>
-                  <p id="projectDescription"></p>
-                </div>
-              </div>
-
-              <script>
-                function showDetails(projectName) {
-                  // Get the modal element
-                  var modal = document.getElementById("projectModal");
-                  
-                  // Get the close button element
-                  // var closeButton = modal.querySelector(".close");
-                  
-                  // Get the project name and description elements
-                  var projectNameElement = modal.querySelector("#projectName");
-                  var projectDescriptionElement = modal.querySelector("#projectDescription");
-                  
-                  // Set the project name and description
-                  // projectNameElement.textContent = projectName;
-                  projectDescriptionElement.textContent = "Add the project description here.";
-                  
-                  // Show the modal when the user clicks on the project
-                  // try out different display values
-                  // modal.style.display = "flex";
-                  // modal.style.display = "inline";
-                  // modal.style.display = "inline-block";
-                  // modal.style.display = "inline-flex";
-                  // modal.style.display = "inline-table";
-                  // modal.style.display = "contents";
-                  // modal.style.display = "grid";
-                  // modal.style.display = "inherit";
-                  // modal.style.display = "initial";
-                  // modal.style.display = "list-item";
-                  // modal.style.display = "none";
-                  // modal.style.display = "run-in";
-
-                  modal.style.display = "block";
-                  
-                  // Close the modal when the user clicks anywhere on projectModal
-                  modal.onclick = function(event) {
-                    
-                      modal.style.display = "none";
-                    
-                  }
-                }
-              </script>
             </li>
-
+            
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -878,8 +828,21 @@
                 <h3 class="project-title">Orizon</h3>
 
                 <p class="project-category">Web development</p>
+                
 
-              </a>
+                <button id="showButtonorizon" onclick="showDetails('orizon')">Show Details</button>
+                
+            
+                <div id="projectDetails">
+                    
+                    <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                    
+                    <!-- Add more details as needed -->
+                    <button id="hideButton" onclick="hideDetails()">Hide Details</button>
+                </div>
+            
+               
+              
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
@@ -897,6 +860,31 @@
 
                 <p class="project-category">Web design</p>
 
+                <button id="showButtonFundo" onclick="showDetails('Fundo')">Show Details</button>
+                
+            
+                <div id="projectDetailsFundo">
+                    
+                    <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                    
+                    <!-- Add more details as needed -->
+                    <button id="hideButtonFundo" onclick="hideDetails('Fundo')">Hide Details</button>
+                </div>
+            
+                <script>
+                  function showDetails(id) {
+                      document.getElementById("projectDetails"+id).style.display = "block";
+                      document.getElementById("showButton"+id).style.display = "none";
+                      document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
+                  }
+          
+                  function hideDetails(id) {
+                      document.getElementById("projectDetails"+id).style.display = "none";
+                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
+                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
+                  }
+              </script>
+              
               </a>
             </li>
 

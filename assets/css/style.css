@@ -115,6 +115,7 @@
 
 
 
+
 /*-----------------------------------*\
   #RESET
 \*-----------------------------------*/
@@ -1032,6 +1033,30 @@ main {
   font-weight: var(--fw-300);
 }
 
+.project-item #projectDetails {
+  display: none;
+  margin-top: 20px;
+}
+
+.project-item #projectDetailsFundo {
+  display: none;
+  margin-top: 20px;
+}
+
+.project-item button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.project-item button:hover {
+  background-color: #45a049;
+}
 
 
 
