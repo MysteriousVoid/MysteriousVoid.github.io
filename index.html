@@ -178,7 +178,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link " data-nav-link>Portfolio</button>
           </li>
 
           <!-- <li class="navbar-item">
@@ -810,17 +810,17 @@
 
                 <p class="project-category">Product Management</p>
 
-                <button id="showButtonlca" onclick="showDetails('lca')">Show Details</button>
+                <button id="showButtonLCA" onclick="showDetails('LCA')">Show Details</button>
                 
             
-                <div id="projectDetailslca">
+                <div id="projectDetailsLCA">
                     
-                    <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                    <p class="timeline-text">Description: This project talks about how we can use low code-no code apps in fast paced environments.</p>
                     
                     <!-- Add more details as needed -->
 
 
-                    <button id="hideButtonlca" onclick="hideDetails('lca')">Hide Details</button>
+                    <button id="hideButtonLCA" onclick="hideDetails('LCA')">Hide Details</button>
                 </div>
             
                 <script>
@@ -841,7 +841,7 @@
 
             </li>
             
-            <li class="project-item  active" data-filter-item data-category="web development">
+            <li class="project-item  active" data-filter-item data-category="product management">
               
 
                 <figure class="project-img">
@@ -849,24 +849,24 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/project-2.png" alt="Marketing Analytics" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Marketing Analytics</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Product Management | Data Science</p>
 
-                <button id="showButtonorizon" onclick="showDetails('orizon')">Show Details</button>
+                <button id="showButtonMA" onclick="showDetails('MA')">Show Details</button>
                 
             
-                <div id="projectDetailsorizon">
+                <div id="projectDetailsMA">
                     
                     <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
                     
                     <!-- Add more details as needed -->
 
 
-                    <button id="hideButtonorizon" onclick="hideDetails('orizon')">Hide Details</button>
+                    <button id="hideButtonMA" onclick="hideDetails('MA')">Hide Details</button>
                 </div>
             
                 <script>
@@ -887,7 +887,7 @@
               
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
+            <li class="project-item  active" data-filter-item data-category="data science">
               <a href="#" >
 
                 <figure class="project-img">
@@ -895,22 +895,22 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/project-3.jpg" alt="Voice of Customer" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Voice of Customer</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Data Science</p>
 
-                <button id="showButtonFundo" onclick="showDetails('Fundo')">Show Details</button>
+                <button id="showButtonVOC" onclick="showDetails('VOC')">Show Details</button>
                 
             
-                <div id="projectDetailsFundo">
+                <div id="projectDetailsVOC">
                     
                     <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
                     
                     <!-- Add more details as needed -->
-                    <button id="hideButtonFundo" onclick="hideDetails('Fundo')">Hide Details</button>
+                    <button id="hideButtonVOC" onclick="hideDetails('VOC')">Hide Details</button>
                 </div>
             
                 <script>
@@ -932,80 +932,147 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="product management">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/project-4.png" alt="Predictive Maintenance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">Predictive Maintenance</h3>
 
-                <p class="project-category">Applications</p>
+                <p class="project-category">Product Management | Applications</p>
 
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#" onclick="openPopup()">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-                <h3 class="project-title">DSM.</h3>
-                <p class="project-category">Web design</p>
-              </a>
-              </li>
-
-              <script>
-                function openPopup() {
-                  // show image
-                  document.querySelector('.project-img img').style.display = "block";
-                }
+                <button id="showButtonPM" onclick="showDetails('PM')">Show Details</button>
+                
+            
+                <div id="projectDetailsPM">
+                    
+                    <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                    
+                    <!-- Add more details as needed -->
+                    <button id="hideButtonPM" onclick="hideDetails('PM')">Hide Details</button>
+                </div>
+            
+                <script>
+                  function showDetails(id) {
+                    event.preventDefault(); // Prevent the webpage from reloading
+                    document.getElementById("projectDetails"+id).style.display = "block";
+                    document.getElementById("showButton"+id).style.display = "none";
+                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
+                  }
+          
+                  function hideDetails(id) {
+                      event.preventDefault(); // Prevent the webpage from reloading
+                      document.getElementById("projectDetails"+id).style.display = "none";
+                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
+                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
+                  }
               </script>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
-                </figure>
-
-                <h3 class="project-title">DSM.</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
+              
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+            <li class="project-item  active" data-filter-item data-category="product management">
+              
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/project-5.png" alt="Pricing Governance" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">Pricing Governance</h3>
 
-                <p class="project-category">Web design</p>
+                <p class="project-category">Product Management</p>
 
-              </a>
+                <button id="showButtonPG" onclick="showDetails('PG')">Show Details</button>
+                
+            
+                <div id="projectDetailsPG">
+                    
+                    <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                    
+                    <!-- Add more details as needed -->
+                    <button id="hideButtonPG" onclick="hideDetails('PG')">Hide Details</button>
+                </div>
+            
+                <script>
+                  function showDetails(id) {
+                    event.preventDefault(); // Prevent the webpage from reloading
+                    document.getElementById("projectDetails"+id).style.display = "block";
+                    document.getElementById("showButton"+id).style.display = "none";
+                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
+                  }
+          
+                  function hideDetails(id) {
+                      event.preventDefault(); // Prevent the webpage from reloading
+                      document.getElementById("projectDetails"+id).style.display = "none";
+                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
+                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
+                  }
+              </script>
+
+              
             </li>
+
+            <li class="project-item  active" data-filter-item data-category="data science">
+              
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="Fleet Management" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fleet Management</h3>
+
+                <p class="project-category">Data Science | Consulting</p>
+
+                <button id="showButtonFM" onclick="showDetails('FM')">Show Details</button>
+                
+            
+                <div id="projectDetailsFM">
+                    
+                    <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                    
+                    <!-- Add more details as needed -->
+                    <button id="hideButtonFM" onclick="hideDetails('FM')">Hide Details</button>
+                </div>
+            
+                <script>
+                  function showDetails(id) {
+                    event.preventDefault(); // Prevent the webpage from reloading
+                    document.getElementById("projectDetails"+id).style.display = "block";
+                    document.getElementById("showButton"+id).style.display = "none";
+                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
+                  }
+          
+                  function hideDetails(id) {
+                      event.preventDefault(); // Prevent the webpage from reloading
+                      document.getElementById("projectDetails"+id).style.display = "none";
+                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
+                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
+                  }
+              </script>
+
+              
+            </li>
+
+            <!--
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+              
+                // template for adding a new project
+                
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
@@ -1018,11 +1085,41 @@
 
                 <p class="project-category">Web development</p>
 
-              </a>
+                <button id="showButtonFundo" onclick="showDetails('Fundo')">Show Details</button>
+                
+            
+                <div id="projectDetailsFundo">
+                    
+                    <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                    
+                    
+                    <button id="hideButtonFundo" onclick="hideDetails('Fundo')">Hide Details</button>
+                </div>
+            
+                <script>
+                  function showDetails(id) {
+                    event.preventDefault(); // Prevent the webpage from reloading
+                    document.getElementById("projectDetails"+id).style.display = "block";
+                    document.getElementById("showButton"+id).style.display = "none";
+                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
+                  }
+          
+                  function hideDetails(id) {
+                      event.preventDefault(); // Prevent the webpage from reloading
+                      document.getElementById("projectDetails"+id).style.display = "none";
+                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
+                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
+                  }
+              </script>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+            
+              
+            -->
+
+            <!-- <li class="project-item  active" data-filter-item data-category="applications">
+              
+                // template for adding a new project
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1036,10 +1133,38 @@
 
                 <p class="project-category">Applications</p>
 
-              </a>
-            </li>
+                <button id="showButtonFundo" onclick="showDetails('Fundo')">Show Details</button>
+                
+            
+                <div id="projectDetailsFundo">
+                    
+                    <p class="timeline-text">Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                    
+                    // Add more details as needed
 
-            <li class="project-item  active" data-filter-item data-category="web development">
+                    <button id="hideButtonFundo" onclick="hideDetails('Fundo')">Hide Details</button>
+                </div>
+            
+                <script>
+                  function showDetails(id) {
+                    event.preventDefault(); // Prevent the webpage from reloading
+                    document.getElementById("projectDetails"+id).style.display = "block";
+                    document.getElementById("showButton"+id).style.display = "none";
+                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
+                  }
+          
+                  function hideDetails(id) {
+                      event.preventDefault(); // Prevent the webpage from reloading
+                      document.getElementById("projectDetails"+id).style.display = "none";
+                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
+                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
+                  }
+              </script>
+            </li> -->
+
+
+            <!-- <li class="project-item  active" data-filter-item data-category="web development">
+              // Original block of code - this has a cool hover effect
               <a href="#">
 
                 <figure class="project-img">
@@ -1055,7 +1180,7 @@
                 <p class="project-category">Web development</p>
 
               </a>
-            </li>
+            </li> -->
 
           </ul>
 

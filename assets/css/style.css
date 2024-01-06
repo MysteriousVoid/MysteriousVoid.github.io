@@ -1033,17 +1033,30 @@ main {
   font-weight: var(--fw-300);
 }
 
-.project-item #projectDetailslca {
+.project-item #projectDetailsLCA {
   display: none;
   margin-top: 20px;
 }
 
-.project-item #projectDetailsorizon {
+.project-item #projectDetailsMA {
   display: none;
   margin-top: 20px;
 }
 
-.project-item #projectDetailsFundo {
+.project-item #projectDetailsVOC {
+  display: none;
+  margin-top: 20px;
+}
+
+.project-item #projectDetailsPM {
+  display: none;
+  margin-top: 20px;
+}
+.project-item #projectDetailsPG {
+  display: none;
+  margin-top: 20px;
+}
+.project-item #projectDetailsFM {
   display: none;
   margin-top: 20px;
 }
