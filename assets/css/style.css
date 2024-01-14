@@ -43,7 +43,7 @@
   ), hsl(240, 2%, 13%);
   --border-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
+    hsla(45, 100%, 71%, 0.251) 0%, 
     hsla(0, 0%, 25%, 0) 50%
   );
   --text-gradient-yellow: linear-gradient(
@@ -68,7 +68,7 @@
   --light-gray-70: #B38B6D;
   --dark-gray: #444444;
   --bittersweet-shimmer: hsl(0, 43%, 51%);
-  --showmore-button: #8B8988;
+  --showmore-button: #444444;
   --showmore-button-hover: #B38B6D;
 
 
