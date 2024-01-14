@@ -23,14 +23,14 @@
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
+    hsla(36, 100%, 69%, 0) 0%, 
+    hsla(36, 100%, 69%, 0) 100%
   );
   --bg-gradient-jet: linear-gradient(
     to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
+    hsla(36, 100%, 69%, 0) 0%, 
+    hsla(36, 100%, 69%, 0) 100%
+  ), #FDFDFD;
   --bg-gradient-yellow-1: linear-gradient(
     to bottom right, 
     hsl(45, 100%, 71%) 0%, 
@@ -54,20 +54,22 @@
 
   /* solid */
 
-  --jet: #FDFDFD;
+  --jet: #e6e4e4;
   --onyx: #FDFDFD;
   --eerie-black-1: #FDFDFD;
   --eerie-black-2: #FDFDFD;
   --smoky-black: #FFFFFF;
   --white-1: #444444;
-  --white-2: #1E3A8A; /* */
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
+  --white-2: #333333; /* */
+  --white-3: #B38B6D; 
+  --orange-yellow-crayola: #B38B6D;
+  --vegas-gold: #999999;
   --light-gray: #E0E7EE;
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --light-gray-70: #B38B6D;
   --dark-gray: #444444;
   --bittersweet-shimmer: hsl(0, 43%, 51%);
-  --showmore-button: #CCCCCC;
+  --showmore-button: #8B8988;
+  --showmore-button-hover: #B38B6D;
 
 
   /* Original Version
@@ -238,8 +240,16 @@ article.active {
 }
 
 .h2,
-.h3,
-.h4,
+.h3 {
+  color: var(--white-1);
+  text-transform: capitalize;
+}
+
+.h4 {
+  color: var(--white-3);
+  text-transform: capitalize;
+}
+
 .h5 {
   color: var(--white-2);
   text-transform: capitalize;
@@ -380,7 +390,7 @@ main {
   color: var(--orange-yellow-crayola);
   background: var(--border-gradient-onyx);
   padding: 10px;
-  box-shadow: var(--shadow-2);
+  box-shadow: var(--shadow-3);
   transition: var(--transition-1);
   z-index: 1;
 }
@@ -434,6 +444,7 @@ main {
 
 .contact-title {
   color: var(--light-gray-70);
+  
   font-size: var(--fs-8);
   text-transform: uppercase;
   margin-bottom: 2px;
@@ -456,7 +467,7 @@ main {
 }
 
 .social-item .social-link {
-  color: var(--light-gray-70);
+  color: var(--dark-gray-70);
   font-size: 18px;
 }
 
@@ -476,7 +487,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #1E3A8A;
+  background: #43464A;
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -544,7 +555,7 @@ main {
   background: var(--border-gradient-onyx);
   padding: 20px;
   border-radius: 14px;
-  box-shadow: var(--shadow-2);
+  box-shadow: var(--shadow-1);
   z-index: 1;
 }
 
@@ -566,7 +577,7 @@ main {
 .service-item-title { margin-bottom: 7px; }
 
 .service-item-text {
-  color: var(--light-gray);
+  color: var(--dark-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
@@ -717,7 +728,7 @@ main {
   width: max-content;
   border-radius: 14px;
   margin-bottom: 15px;
-  box-shadow: var(--shadow-2);
+  box-shadow: var(--shadow-1);
 }
 
 .modal-img-wrapper > img { display: none; }
@@ -885,7 +896,7 @@ main {
 }
 
 .timeline-text {
-  color: var(--light-gray);
+  color: var(--dark-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
@@ -910,7 +921,7 @@ main {
 }
 
 .skill .title-wrapper data {
-  color: var(--light-gray);
+  color: var(--dark-gray);
   font-size: var(--fs-7);
   font-weight: var(--fw-300);
 }
@@ -945,7 +956,7 @@ main {
 
 .filter-select {
   background: var(--eerie-black-2);
-  color: var(--light-gray);
+  color: var(--dark-gray);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -982,7 +993,7 @@ main {
 
 .select-item button {
   background: var(--eerie-black-2);
-  color: var(--light-gray);
+  color: var(--dark-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   text-transform: capitalize;
@@ -1082,7 +1093,7 @@ main {
 }
 
 .project-category {
-  color: var(--light-gray-70);
+  color: var(--dark-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
@@ -1127,7 +1138,7 @@ main {
 }
 
 .project-item button:hover {
-  background-color: #AACCFF;
+  background-color: var(--showmore-button-hover);
 }
 
 .project-item #projectDetailsLCA section {
@@ -1314,6 +1325,7 @@ main {
   grid-template-columns: 1fr;
   gap: 25px;
   margin-bottom: 25px;
+  border: #43464A;
 }
 
 .form-input {
@@ -1777,7 +1789,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .filter-item button {
-    color: var(--light-gray);
+    color: var(--dark-gray);
     font-size: var(--fs-5);
     transition: var(--transition-1);
   }
