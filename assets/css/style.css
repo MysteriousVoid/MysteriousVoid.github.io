@@ -9,8 +9,6 @@
 
 
 
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -56,7 +54,24 @@
 
   /* solid */
 
-  --jet: hsl(0, 0%, 22%);
+  --jet: #FDFDFD;
+  --onyx: #FDFDFD;
+  --eerie-black-1: #FDFDFD;
+  --eerie-black-2: #FDFDFD;
+  --smoky-black: #FFFFFF;
+  --white-1: #444444;
+  --white-2: #1E3A8A; /* */
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --light-gray: #E0E7EE;
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --dark-gray: #444444;
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
+  --showmore-button: #CCCCCC;
+
+
+  /* Original Version
+ --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
@@ -68,6 +83,7 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
+  */
 
   /**
    * typography
@@ -460,7 +476,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: #1E3A8A;
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -499,7 +515,7 @@ main {
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
-  color: var(--light-gray);
+  color: var(--dark-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -1104,14 +1120,14 @@ main {
   margin: 5px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #4CAF50;
+  background-color: var(--showmore-button);
   color: #fff;
   border: none;
   border-radius: 5px;
 }
 
 .project-item button:hover {
-  background-color: #45a049;
+  background-color: #AACCFF;
 }
 
 .project-item #projectDetailsLCA section {
