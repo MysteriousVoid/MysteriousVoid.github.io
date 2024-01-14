@@ -1005,13 +1005,15 @@ main {
 .select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
 
 .project-list {
-  display: grid;
+  display: inline-block;
   grid-template-columns: 1fr;
   gap: 30px;
   margin-bottom: 10px;
 }
 
-.project-item { display: none; }
+.project-item { display: flex;
+  align-items: center;
+  margin-bottom: 20px;}
 
 .project-item.active {
   display: block;
@@ -1026,12 +1028,8 @@ main {
 .project-item > a { width: 100%; }
 
 .project-img {
+  flex: 0 0 40%; /* Adjust the width of the image */
   position: relative;
-  width: 100%;
-  height: 200px;
-  border-radius: 16px;
-  overflow: hidden;
-  margin-bottom: 15px;
 }
 
 .project-img::before {

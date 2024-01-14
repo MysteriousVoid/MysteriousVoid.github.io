@@ -186,9 +186,6 @@
           </li> -->
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>portfolio_project1</button>
-          </li>
-          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -737,27 +734,30 @@
           <ul class="techStack-list has-scrollbar">
       
               <li class="techStack-item">
-                  <img src="./assets/images/logo-1-color.png" alt="Python">
+                  <img src="./assets/images/python.jpg" alt="Python">
+              </li>
+              
+              <li class="techStack-item">
+                <img src="./assets/images/java.png" alt="Java">
+              
+              </li>
+
+              <li class="techStack-item">
+                  <img src="./assets/images/tableau.png" alt="Tableau">
               </li>
       
               <li class="techStack-item">
-                  <img src="./assets/images/logo-2-color.png" alt="Tableau">
+                  <img src="./assets/images/JMP_Logo.jpg" alt="JmpPro">
+              </li>
+      
+              
+      
+              <li class="techStack-item">
+                  <img src="./assets/images/Zoho.png" alt="Zoho">
               </li>
       
               <li class="techStack-item">
-                  <img src="./assets/images/logo-3-color.png" alt="JmpPro">
-              </li>
-      
-              <li class="techStack-item">
-                  <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </li>
-      
-              <li class="techStack-item">
-                  <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </li>
-      
-              <li class="techStack-item">
-                  <img src="./assets/images/logo-6-color.png" alt="client logo">
+                  <img src="./assets/images/Dataiku_Logo.jpg" alt="DataIku">
               </li>
       
           </ul>
@@ -776,11 +776,9 @@
       -->
 
       <!-- Your project articles -->
-      <article class="portfolio_details" id="project1" data-page="portfolio_project1">
-        <h2>Project Title 1</h2>
-        <!-- Other project details go here -->
-      </article>
-
+      
+      
+      
 
       <article class="portfolio" data-page="portfolio">
 
@@ -847,24 +845,28 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="product management">
-              
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <figure class="project-item">
+                <div class="project-img">
+                    <img src="./assets/images/project-1.jpg" alt="Low code apps" loading="lazy">
+                    <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                </div>
+            
+                <div class="project-details">
 
-                  <img src="./assets/images/project-1.jpg" alt="Low code apps" loading="lazy">
-                </figure>
 
                 <h3 class="project-title">Low code apps</h3>
 
                 <p class="project-category">Product Management</p>
 
                 <button id="showButtonLCA" onclick="showDetails('LCA')">Show Details</button>
-                <button onclick="goToPortfolioProject('portfolio_project1')">Go to Portfolio Project 1</button>
+
+              </div>
+              
                 
-            
+              </figure>
                 <div id="projectDetailsLCA">
                     
                   <section id="problemStatement">
@@ -911,7 +913,7 @@
 
                     <button id="hideButtonLCA" onclick="hideDetails('LCA')">Hide Details</button>
                 </div>
-            
+              
                 
 
             </li>
@@ -919,21 +921,29 @@
             <li class="project-item  active" data-filter-item data-category="product management">
               
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                <figure class="project-item">
+                  <div class="project-img">
+                      <img src="./assets/images/project-2.png" alt="Marketing Analytics" loading="lazy">
+                      <div class="project-item-icon-box">
+                          <ion-icon name="eye-outline"></ion-icon>
+                      </div>
                   </div>
+              
+                  <div class="project-details">
+  
+  
+                    <h3 class="project-title">Marketing Analytics</h3>
 
-                  <img src="./assets/images/project-2.png" alt="Marketing Analytics" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Marketing Analytics</h3>
-
-                <p class="project-category">Product Management | Data Science</p>
-
-                <button id="showButtonMA" onclick="showDetails('MA')">Show Details</button>
+                    <p class="project-category">Product Management | Data Science</p>
+    
+                    <button id="showButtonMA" onclick="showDetails('MA')">Show Details</button>
+                    
                 
-            
+                </div>
+                
+                  
+                </figure>
+                
                 <div id="projectDetailsMA">
                     
                   <section id="problemStatement">
@@ -988,21 +998,29 @@
             <li class="project-item  active" data-filter-item data-category="data science">
               
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="Voice of Customer" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Voice of Customer</h3>
-
-                <p class="project-category">Data Science</p>
-
-                <button id="showButtonVOC" onclick="showDetails('VOC')">Show Details</button>
                 
-            
+                <figure class="project-item">
+                  <div class="project-img">
+                    <img src="./assets/images/project-3.jpg" alt="Voice of Customer" loading="lazy">
+                      <div class="project-item-icon-box">
+                          <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                  </div>
+              
+                  <div class="project-details">
+  
+  
+                    <h3 class="project-title">Voice of Customer</h3>
+
+                    <p class="project-category">Data Science</p>
+    
+                    <button id="showButtonVOC" onclick="showDetails('VOC')">Show Details</button>
+                    
+                </div>
+                
+                  
+                </figure>
+                
                 <div id="projectDetailsVOC">
                     
                   <section id="problemStatement">
@@ -1054,19 +1072,29 @@
             <li class="project-item  active" data-filter-item data-category="product management">
               
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                
+                <figure class="project-item">
+                  <div class="project-img">
+                    <img src="./assets/images/project-4.png" alt="Predictive Maintenance" loading="lazy">
+                      <div class="project-item-icon-box">
+                          <ion-icon name="eye-outline"></ion-icon>
+                      </div>
                   </div>
+              
+                  <div class="project-details">
+  
+  
+                    <h3 class="project-title">Predictive Maintenance</h3>
 
-                  <img src="./assets/images/project-4.png" alt="Predictive Maintenance" loading="lazy">
+                    <p class="project-category">Product Management | Applications</p>
+
+                    <button id="showButtonPM" onclick="showDetails('PM')">Show Details</button>
+                
+                  </div>
+                
+                  
                 </figure>
 
-                <h3 class="project-title">Predictive Maintenance</h3>
-
-                <p class="project-category">Product Management | Applications</p>
-
-                <button id="showButtonPM" onclick="showDetails('PM')">Show Details</button>
                 
             
                 <div id="projectDetailsPM">
@@ -1120,19 +1148,30 @@
             <li class="project-item  active" data-filter-item data-category="product management">
               
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+               
 
-                  <img src="./assets/images/project-5.png" alt="Pricing Governance" loading="lazy">
+                <figure class="project-item">
+                  <div class="project-img">
+                    <img src="./assets/images/project-5.png" alt="Pricing Governance" loading="lazy">
+                      <div class="project-item-icon-box">
+                          <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                  </div>
+              
+                  <div class="project-details">
+  
+  
+                    <h3 class="project-title">Pricing Governance</h3>
+
+                    <p class="project-category">Product Management</p>
+
+                    <button id="showButtonPG" onclick="showDetails('PG')">Show Details</button>
+                
+                  </div>
+                
+                  
                 </figure>
 
-                <h3 class="project-title">Pricing Governance</h3>
-
-                <p class="project-category">Product Management</p>
-
-                <button id="showButtonPG" onclick="showDetails('PG')">Show Details</button>
                 
             
                 <div id="projectDetailsPG">
@@ -1184,19 +1223,30 @@
             <li class="project-item  active" data-filter-item data-category="data science">
               
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              
 
-                  <img src="./assets/images/project-6.png" alt="Fleet Management" loading="lazy">
+                <figure class="project-item">
+                  <div class="project-img">
+                    <img src="./assets/images/project-6.png" alt="Fleet Management" loading="lazy">
+                      <div class="project-item-icon-box">
+                          <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+                  </div>
+              
+                  <div class="project-details">
+  
+  
+                    <h3 class="project-title">Fleet Management</h3>
+
+                    <p class="project-category">Data Science | Consulting</p>
+
+                    <button id="showButtonFM" onclick="showDetails('FM')">Show Details</button>
+                
+                  </div>
+                
+                  
                 </figure>
 
-                <h3 class="project-title">Fleet Management</h3>
-
-                <p class="project-category">Data Science | Consulting</p>
-
-                <button id="showButtonFM" onclick="showDetails('FM')">Show Details</button>
                 
             
                 <div id="projectDetailsFM">
