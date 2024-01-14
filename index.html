@@ -186,6 +186,9 @@
           </li> -->
 
           <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>portfolio_project1</button>
+          </li>
+          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
@@ -772,6 +775,13 @@
         - #PORTFOLIO
       -->
 
+      <!-- Your project articles -->
+      <article class="portfolio_details" id="project1" data-page="portfolio_project1">
+        <h2>Project Title 1</h2>
+        <!-- Other project details go here -->
+      </article>
+
+
       <article class="portfolio" data-page="portfolio">
 
         <header>
@@ -852,6 +862,7 @@
                 <p class="project-category">Product Management</p>
 
                 <button id="showButtonLCA" onclick="showDetails('LCA')">Show Details</button>
+                <button onclick="goToPortfolioProject('portfolio_project1')">Go to Portfolio Project 1</button>
                 
             
                 <div id="projectDetailsLCA">
@@ -901,21 +912,7 @@
                     <button id="hideButtonLCA" onclick="hideDetails('LCA')">Hide Details</button>
                 </div>
             
-                <script>
-                  function showDetails(id) {
-                      event.preventDefault(); // Prevent the webpage from reloading
-                      document.getElementById("projectDetails"+id).style.display = "block";
-                      document.getElementById("showButton"+id).style.display = "none";
-                      document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
-                  }
-          
-                  function hideDetails(id) {
-                      event.preventDefault(); // Prevent the webpage from reloading
-                      document.getElementById("projectDetails"+id).style.display = "none";
-                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
-                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
-                  }
-              </script>
+                
 
             </li>
             
@@ -984,21 +981,7 @@
                     <button id="hideButtonMA" onclick="hideDetails('MA')">Hide Details</button>
                 </div>
             
-                <script>
-                  function showDetails(id) {
-                      event.preventDefault(); // Prevent the webpage from reloading
-                      document.getElementById("projectDetails"+id).style.display = "block";
-                      document.getElementById("showButton"+id).style.display = "none";
-                      document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
-                  }
-          
-                  function hideDetails(id) {
-                      event.preventDefault(); // Prevent the webpage from reloading
-                      document.getElementById("projectDetails"+id).style.display = "none";
-                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
-                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
-                  }
-              </script>
+                
               
             </li>
 
@@ -1064,22 +1047,6 @@
                   </section>
                     <button id="hideButtonVOC" onclick="hideDetails('VOC')">Hide Details</button>
                 </div>
-            
-                <script>
-                  function showDetails(id) {
-                    event.preventDefault(); // Prevent the webpage from reloading
-                    document.getElementById("projectDetails"+id).style.display = "block";
-                    document.getElementById("showButton"+id).style.display = "none";
-                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
-                  }
-          
-                  function hideDetails(id) {
-                      event.preventDefault(); // Prevent the webpage from reloading
-                      document.getElementById("projectDetails"+id).style.display = "none";
-                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
-                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
-                  }
-              </script>
               
               
             </li>
@@ -1148,24 +1115,6 @@
 
                     <button id="hideButtonPM" onclick="hideDetails('PM')">Hide Details</button>
                 </div>
-            
-                <script>
-                  function showDetails(id) {
-                    event.preventDefault(); // Prevent the webpage from reloading
-                    document.getElementById("projectDetails"+id).style.display = "block";
-                    document.getElementById("showButton"+id).style.display = "none";
-                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
-                  }
-          
-                  function hideDetails(id) {
-                      event.preventDefault(); // Prevent the webpage from reloading
-                      document.getElementById("projectDetails"+id).style.display = "none";
-                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
-                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
-                  }
-              </script>
-
-              
             </li>
 
             <li class="project-item  active" data-filter-item data-category="product management">
@@ -1230,24 +1179,6 @@
                   </section>
                     <button id="hideButtonPG" onclick="hideDetails('PG')">Hide Details</button>
                 </div>
-            
-                <script>
-                  function showDetails(id) {
-                    event.preventDefault(); // Prevent the webpage from reloading
-                    document.getElementById("projectDetails"+id).style.display = "block";
-                    document.getElementById("showButton"+id).style.display = "none";
-                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
-                  }
-          
-                  function hideDetails(id) {
-                      event.preventDefault(); // Prevent the webpage from reloading
-                      document.getElementById("projectDetails"+id).style.display = "none";
-                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
-                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
-                  }
-              </script>
-
-              
             </li>
 
             <li class="project-item  active" data-filter-item data-category="data science">
@@ -1312,24 +1243,6 @@
                 </section>
                     <button id="hideButtonFM" onclick="hideDetails('FM')">Hide Details</button>
                 </div>
-            
-                <script>
-                  function showDetails(id) {
-                    event.preventDefault(); // Prevent the webpage from reloading
-                    document.getElementById("projectDetails"+id).style.display = "block";
-                    document.getElementById("showButton"+id).style.display = "none";
-                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
-                  }
-          
-                  function hideDetails(id) {
-                      event.preventDefault(); // Prevent the webpage from reloading
-                      document.getElementById("projectDetails"+id).style.display = "none";
-                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
-                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
-                  }
-              </script>
-
-              
             </li>
 
             <!--
@@ -1360,22 +1273,6 @@
                     
                     <button id="hideButtonFundo" onclick="hideDetails('Fundo')">Hide Details</button>
                 </div>
-            
-                <script>
-                  function showDetails(id) {
-                    event.preventDefault(); // Prevent the webpage from reloading
-                    document.getElementById("projectDetails"+id).style.display = "block";
-                    document.getElementById("showButton"+id).style.display = "none";
-                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
-                  }
-          
-                  function hideDetails(id) {
-                      event.preventDefault(); // Prevent the webpage from reloading
-                      document.getElementById("projectDetails"+id).style.display = "none";
-                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
-                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
-                  }
-              </script>
             </li>
 
             
@@ -1409,22 +1306,6 @@
 
                     <button id="hideButtonFundo" onclick="hideDetails('Fundo')">Hide Details</button>
                 </div>
-            
-                <script>
-                  function showDetails(id) {
-                    event.preventDefault(); // Prevent the webpage from reloading
-                    document.getElementById("projectDetails"+id).style.display = "block";
-                    document.getElementById("showButton"+id).style.display = "none";
-                    document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
-                  }
-          
-                  function hideDetails(id) {
-                      event.preventDefault(); // Prevent the webpage from reloading
-                      document.getElementById("projectDetails"+id).style.display = "none";
-                      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
-                      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
-                  }
-              </script>
             </li> -->
 
 
@@ -1747,6 +1628,35 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    function goToPortfolioProject(projectId) {
+        const targetArticle = document.querySelector(`.portfolio_details[data-page="${projectId}"]`);
+
+        if (targetArticle) {
+            window.location.href = '#' + targetArticle.id;
+        }
+    }
+</script>
+
+<!--
+    - Script for showing and hiding project details
+  -->
+<script>
+  function showDetails(id) {
+      event.preventDefault(); // Prevent the webpage from reloading
+      document.getElementById("projectDetails"+id).style.display = "block";
+      document.getElementById("showButton"+id).style.display = "none";
+      document.getElementById("hideButton"+id).style.display = "inline-block"; // Show the "Hide Details" button
+  }
+
+  function hideDetails(id) {
+      event.preventDefault(); // Prevent the webpage from reloading
+      document.getElementById("projectDetails"+id).style.display = "none";
+      document.getElementById("showButton"+id).style.display = "inline-block"; // Show the "Show Details" button
+      document.getElementById("hideButton"+id).style.display = "none"; // Hide the "Hide Details" button
+  }
+</script>
 
 </body>
 
