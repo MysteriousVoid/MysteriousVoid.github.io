@@ -1125,6 +1125,20 @@ main {
 .project-title,
 .project-category { margin-left: 10px; }
 
+.project-category-overview {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+}
+
+.project-title-overview {
+  color: var(--white-2);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-400);
+  text-transform: capitalize;
+  line-height: 1.3;
+}
+
 .project-title {
   color: var(--white-2);
   font-size: var(--fs-5);
