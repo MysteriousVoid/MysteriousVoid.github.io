@@ -1038,15 +1038,14 @@ main {
 .select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
 
 .project-list {
-  display: inline-block;
+  display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
   margin-bottom: 10px;
 }
 
-.project-item { display: flex;
-  align-items: center;
-  margin-bottom: 20px;}
+.project-item { display: none;
+}
 
 .project-item.active {
   display: block;
@@ -1061,11 +1060,13 @@ main {
 .project-item > a { width: 100%; }
 
 .project-img {
-  flex: 0 0 40%; /* Adjust the width of the image */
   position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
-
-
 
 .project-img::before {
   content: "";
@@ -1126,7 +1127,7 @@ main {
 }
 
 .project-category {
-  color: var(--dark-gray-70);
+  color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
 }
@@ -1164,68 +1165,14 @@ main {
   margin: 5px;
   font-size: 16px;
   cursor: pointer;
-  background-color: var(--showmore-button);
+  background-color: #4CAF50;
   color: #fff;
   border: none;
   border-radius: 5px;
 }
 
 .project-item button:hover {
-  background-color: var(--showmore-button-hover);
-}
-
-.project-item #projectDetailsLCA section {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 15px;
-  background-color: #777; 
-  border-radius: 5px;
-
-}
-
-.project-item #projectDetailsMA section {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 15px;
-  background-color: #777; 
-  border-radius: 5px;
-
-}
-
-.project-item #projectDetailsVOC section {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 15px;
-  background-color: #777; 
-  border-radius: 5px;
-
-}
-
-.project-item #projectDetailsPM section {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 15px;
-  background-color: #777; 
-  border-radius: 5px;
-
-}
-
-.project-item #projectDetailsPG section {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 15px;
-  background-color: #777; 
-  border-radius: 5px;
-
-}
-
-.project-item #projectDetailsFM section {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 15px;
-  background-color: #777; 
-  border-radius: 5px;
-
+  background-color: #45a049;
 }
 
 /* .project-item #projectDetailsPM h3 | li {
@@ -1235,6 +1182,52 @@ main {
 .project-item #projectDetailsPM p {
   color: #555555;
 } */
+
+
+
+
+/*-----------------------------------*\
+  #Containers
+\*-----------------------------------*/
+
+/* Vertical Container Styles */
+.vertical-container {
+  max-width: auto;
+  margin: 2px;
+  
+}
+
+.vertical-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+
+/* Horizontal Container Styles */
+.horizontal-container {
+  display: flex;
+  max-width: auto;
+  margin: 20px auto;
+}
+
+.horizontal-item {
+  flex: 1; /* Default to equal width, adjust as needed */
+  min-width: 200px auto; /* Optional minimum width */
+  /* border: 1px solid #f7f4ee; */
+  padding: 10px;
+  margin-right: 5px; /* Add spacing between items */
+  border-radius: 5px;
+}
+
+
+
+
+.horizontal-item:last-child {
+  margin-right: 0; /* Remove margin for the last item */
+}
+
 
 
 
@@ -1835,6 +1828,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
 
+  .horizontal-container { grid-template-columns: 1fr; }
+
 
 
   /**
@@ -1953,7 +1948,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * PORTFOLIO
    */
 
-  .project-list { grid-template-columns: repeat(3, 1fr); }
+  .project-list { grid-template-columns: repeat(1, 1fr); }
 
 
 
