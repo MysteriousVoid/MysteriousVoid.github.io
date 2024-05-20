@@ -177,7 +177,30 @@ html { font-family: var(--ff-poppins); }
 body { background: var(--smoky-black); }
 
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* space between tags */
+}
 
+.tag {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 5px 10px;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 11px;
+  text-transform: uppercase; /* UPPERCASE text */
+}
+
+/* You can customize the background color for different tags if needed */
+
+.tag[data-category="business"] {
+  background-color: #2196F3; /* Blue background */
+}
+
+.tag[data-category="web"] {
+  background-color: #FF9800; /* Orange background */
+}
 
 
 /*-----------------------------------*\
