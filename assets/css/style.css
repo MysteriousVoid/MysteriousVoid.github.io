@@ -176,7 +176,7 @@ html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
 
-
+/* Project Tags */
 .tags {
   display: flex;
   flex-wrap: wrap;
