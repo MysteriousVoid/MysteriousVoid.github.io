@@ -576,6 +576,16 @@ main {
 
 .service-content-box { text-align: center; }
 
+.service-content-box.service-list-1 { 
+  /* Styles specific to the boxes in portfolio*/
+  text-align: left;
+}
+
+.service-content-box.service-list-2 { 
+  /* Styles specific to the second list go here */
+  text-align: center;
+}
+
 .service-item-title { margin-bottom: 7px; }
 
 .service-item-text {
