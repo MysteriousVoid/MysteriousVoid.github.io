@@ -147,9 +147,6 @@
     </aside>
 
 
-
-
-
     <!--
       - #main-content
     -->
@@ -187,9 +184,6 @@
         </ul>
 
       </nav>
-
-
-
 
 
       <!--
@@ -796,10 +790,103 @@
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
 
+        <!-- Table of Contents-->
+
+        <!-- Introduction and Table of Contents -->
+          <div class="portfolio-intro">
+            <p>Welcome to my Portfolio. Here you'll find a selection of projects that demonstrate my skills and experiences as an AI Product Manager. Each project showcases my ability to integrate AI technologies with product management to drive innovation and results. Explore the projects below to see how I apply AI to solve complex problems and deliver value.</p>
+          </div>
+
+          <!-- One way of creating some table!-->
+          <!-- <div class="table-of-contents">
+            <h3>Table of Contents</h3>
+            <ul>
+              <li><a href="#project1">Launch of Acme Chatbot</a></li>
+              <li><a href="#project2">Low Code/No Code Applications</a></li>
+             
+            </ul>
+          </div> -->
+
+          <section class="projects">
+            <h3>Projects Overview</h3>
+            <table class="projects-table">
+              <thead>
+                <tr>
+                  <th>Project Name</th><th>Domain</th><th>Status</th><th>Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="#project1">Predictive Maintenance</a></td>
+                  <td>Industry 4.0</td><td>Complete</td><td>Full-time</td>
+                </tr>
+
+                <tr>
+                  <td><a href="#project2">Low Code/No Code Applications</a></td>
+                  <td>App Developement</td><td>Complete</td><td>Full-time</td>
+                </tr>
+
+                <tr>
+                  <td><a href="#project3">Automation Tasks</a></td>
+                  <td>Productivity</td><td>Complete</td><td>Full-time</td>
+                </tr>
+
+                <tr>
+                  <td><a href="#project4">Pricing Governance</a></td>
+                  <td>Organization Change</td><td>Complete</td><td>Full-time</td>
+                </tr>
+
+
+                <tr>
+                  <td><a href="#project5">Marketing Analytics</a></td>
+                  <td>Analytics</td><td>Complete</td><td>Full-time</td>
+                </tr>
+
+                <tr>
+                  <td><a href="#project6">VOC | VOS</a></td>
+                  <td>Market Research</td><td>Complete</td><td>Full-time</td>
+                </tr>
+
+                <tr>
+                  <td><a href="#project7">Fault in our machines</a></td>
+                  <td>Industry 4.0</td><td>On going</td><td>Graduate Student</td>
+                </tr>
+
+                <tr>
+                  <td><a href="#project8">Trading with multiple bandits</a></td>
+                  <td>Stock trading</td><td>On going</td><td>Graduate Student</td>
+                </tr>
+
+                <tr>
+                  <td><a href="#project9">Automated Surveillance system</a></td>
+                  <td>Hardware product</td><td>Complete</td><td>Summer Full-time</td>
+                </tr>
+
+                <tr>
+                  <td><a href="#project10">Insitu Water Purification</a></td>
+                  <td>Social Impact</td><td>Complete</td><td>Summer Internship</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </section>
+        
+        <br>
+
+        <!--
+          - projects
+        -->
+
         <section class="projects">
 
-          <ul class="filter-list">
+         
 
+          <!--
+            - filter list
+          -->
+
+          <ul class="filter-list">
+          
             <li class="filter-item">
               <button class="active" data-filter-btn>All</button>
             </li>
@@ -817,6 +904,11 @@
             </li>
 
           </ul>
+
+          
+          <!--
+            - Filter Select Box
+          -->
 
           <div class="filter-select-box">
 
@@ -852,109 +944,84 @@
 
           </div>
 
+          <div class="separator"></div>
+
           <ul class="project-list">
 
-            <!--  New Template - Launch of Acme Chatbot-->
-
-            <li class="project-item  active" data-filter-item data-category="product management">
-          
-              <!-- This is the Template for all the projects -->
+            <!--  First Project - Predictive Maintenance -->
+            
+            <li id = "project1" class="project-item  active" data-filter-item data-category="product management">
               
-              <!-- Title of the project-->
               <h3 class="h3 techStack-title ">Launch of Acme Chatbot</h3>
+              <!-- Tags for the project | default color is green-->
               <div class="tags">
                 <div class="tag">Social Impact</div>
                 <div class="tag">Mobile App</div>
                 <div class="tag" data-category="business">Business</div>
                 <div class="tag" data-category="web">Web</div>
-
               </div>
+
               <div class="separator"></div>
 
               <!-- Item 1 - Objective-->
               <div >
+                <h3 class="h4 timeline-item-title">Objective</h3>  
+                <p class="timeline-text">
+                  To enhance customer service efficiency by integrating a chatbot into our e-commerce platform.
+                </p>
+              </div><br>
 
-                <h3 class="h4 timeline-item-title">Objective</h3>
-                  
-                  <p class="timeline-text">
-                    To enhance customer service efficiency by integrating a chatbot into our e-commerce platform.
-                  </p>
-
-              </div>
-              <br>
-
-              <!-- Item 2 - Project status-->
+              <!-- Item 2 - Project Status-->
               <div >
-
-                <h3 class="h4 timeline-item-title">Project Status</h3>
-                  
-                  <div class="tags">
-                <div class="tag">Complete</div>
-                </div>
-              
-              </div>
-              <br>
+                <h3 class="h4 timeline-item-title">Project Status</h3>  
+                <div class="tags"><div class="tag">Complete</div></div>
+              </div><br>
 
               <!-- Item 3 - Solution Implemented-->
 
               <div >
-
                 <h3 class="h4 timeline-item-title">Solution Implemented</h3>
-                  
-                  <p class="timeline-text">
-                    Developed a chatbot capable of handling 50% of routine customer inquiries.
-                  </p>
+                <p class="timeline-text">
+                  Developed a chatbot capable of handling 50% of routine customer inquiries.
+                </p>
+              </div><br>
 
-              </div>
-              <br>
-
-              <!-- Item 4 - Tech stack used-->
+              <!-- Item 4 - Tech Stack Used-->
 
               <section class="techStack">
-
-                <h3 class="h4 timeline-item-title">Tech Stack</h3>
-            
+                <h3 class="h4 timeline-item-title">Tech Stack used</h3>
                 <ul class="techStack-list has-scrollbar">
-            
-                  <li class="techStack-item">
-                    <img src="./assets/images/python.jpg" alt="Python">
-                  </li>
-                  <li class="techStack-item">
-                    <img src="./assets/images/gcp.png" alt="GCP">
-                  </li>
-                  <li class="techStack-item">
-                    <img src="./assets/images/Zoho.png" alt="Zoho">
-                  </li>
-    
+                  <li class="techStack-item"><img src="./assets/images/python.jpg" alt="Python"></li>
+                  <li class="techStack-item"><img src="./assets/images/gcp.png" alt="GCP"></li>
+                  <li class="techStack-item"><img src="./assets/images/Zoho.png" alt="Zoho"></li>
                 </ul>
               </section>
 
               <!-- Item 5 - Impact -->
 
               <div >
-
                 <h3 class="h4 timeline-item-title">Impact</h3>
-                  
-                  <p class="timeline-text">
-                    Reduced average customer wait time by 30% and increased customer satisfaction scores by 25%.
-                  </p>
-
+                <p class="timeline-text">
+                  Reduced average customer wait time by 30% and increased customer satisfaction scores by 25%.
+                </p>
               </div>
 
 
               <div class="separator"></div>
 
               <!-- Button to show the details | Make sure to keep this 'project_initials' unique on entire website. 
-                There are 5 instances of it for each project!-->
+                There are 5 instances of it for each project!
+              In this template I have assumed project_initials as lac. So replace lac with that project's initials.-->
+              
               <div class="form-b">
-                <button id="showButtonproject_initials" onclick="showDetails('project_initials')">Show Details</button>
+                <button id="showButtonlac" onclick="showDetails('lac')">Show Details</button>
               </div>
 
             
               <!-- Hidden block with details -->
-              <div id="projectDetailsproject_initials">
+              <div id="projectDetailslac">
                  
-                <!-- This will showcase data in tabular format -->
+                <!-- This will showcase data in data card format -->
                 <section class="service">
 
                   <h3 class="h3 service-title">More Details:</h3>
@@ -1062,7 +1129,6 @@
         
                     </li>
 
-
                     <!-- Fourth item on the list | Innovation & Creativity-->
                     <li class="service-item">
 
@@ -1089,8 +1155,6 @@
                       </div>
         
                     </li>
-
-
         
                   </ul>
         
@@ -1099,7 +1163,7 @@
 
                 <!-- Button to hide the details | This is shown inside the project details for better user experiance-->
                 <div class="form-b">
-                  <button id="hideButtonproject_initials" onclick="hideDetails('project_initials')">Hide Details</button>
+                  <button id="hideButtonlac" onclick="hideDetails('lac')">Hide Details</button>
                 </div>
                   
               </div>
@@ -1108,17 +1172,32 @@
               
             </li>
 
+            
+            <!--  Second Project - Low code | No code apps -->
 
+            
+            <!--  Third Project - Automation Tasks -->
 
+            <!--  Fourth Project - Pricing Governance -->
 
-            <!-- Old data/Format-->
+            <!--  Fifth Project - Marketing Analytics -->
 
-            <!--  First Item-->            
+            <!--  Sixth Project - VOC | VOS -->
+
+            <!--  Seventh Project -  Fault in our machines-->
+            
+            <!--  Eighth Project - Trading with multiple bandits -->
+
+            <!--  Ninth Project - Automated Surveillance system -->
+
+            <!--  Tenth Project - Water Purification -->
+
+          
+
+            <!-- Old data/Format of project: UI version 2, date - April 2024-->
+            
             <li class="project-item  active" data-filter-item data-category="product management">
-              
-
-                
-
+           
                 <div class="horizontal-container">
                   <div class="horizontal-item" style="flex: 1;">
                     <figure class="project-img">
@@ -1149,7 +1228,7 @@
                     </p>
                   </div>
                   
-              </div>
+                 </div>
 
                 <div class="horizontal-container">
                   <div class="horizontal-item" style="flex: 1;">
@@ -1172,11 +1251,11 @@
                     </p>
                   </div>
                  
-              </div>
+                </div>
 
-              <div class="form-b">
-                <button id="showButtonMA" onclick="showDetails('MA')">Show Details</button>
-              </div>
+                <div class="form-b">
+                  <button id="showButtonMA" onclick="showDetails('MA')">Show Details</button>
+                </div>
 
               
 
@@ -1199,17 +1278,18 @@
                         campaign effectiveness assessment, and visualizing lead journeys.
                       </li>
                       <li>●	Revolutionized marketing analytics for FRR business unit, leveraging Eloqua and Salesforce data. Automated lead mapping, built insightful models, and conveyed predictive 
-                        and prescriptive analyses for marketing campaigns.</p>
+                        and prescriptive analyses for marketing campaigns.
                       </li>
                       
                     </ul>
                 
                     
-                  <div class="form-b">
-                    <button id="hideButtonMA" onclick="hideDetails('MA')">Hide Details</button>
-                </div>
+                    <div class="form-b">
+                      <button id="hideButtonMA" onclick="hideDetails('MA')">Hide Details</button>
+                    </div>
                     
                 </div>
+                
                 <div class="separator"></div>
                 
                 
@@ -1519,7 +1599,7 @@
                   </p>
                 </div>
                 
-            </div>
+               </div>
 
               <div class="horizontal-container">
                 <div class="horizontal-item" style="flex: 1;">
@@ -1539,11 +1619,12 @@
                   </p>
                 </div>
                 
-            </div>
-            <!-- <div class="form-b">
-              <button id="showButtonLCA" onclick="showDetails('LCA')" class="align-right">Show Details</button>
-            </div> -->
-            
+               </div>
+           
+               <!-- <div class="form-b">
+                <button id="showButtonLCA" onclick="showDetails('LCA')" class="align-right">Show Details</button>
+              </div> -->
+              
           
               <div id="projectDetailsLCA">
                   
@@ -1564,7 +1645,7 @@
                     campaign effectiveness assessment, and visualizing lead journeys.
                   </li>
                   <li>●	Revolutionized marketing analytics for FRR business unit, leveraging Eloqua and Salesforce data. Automated lead mapping, built insightful models, and conveyed predictive 
-                    and prescriptive analyses for marketing campaigns.</p>
+                    and prescriptive analyses for marketing campaigns.
                   </li>
                   
                 </ul>
@@ -1578,8 +1659,334 @@
                   </div>
               <div class="separator"></div>
 
-          </li>
+            </li>
+
+            <!--  Latest Template: UI version 3, date - May 2024 -->
+            
+            <!-- <li class="project-item  active" data-filter-item data-category="product management">
+              
+              <h3 class="h3 techStack-title ">Launch of Acme Chatbot</h3>
+              
+              <div class="tags">
+                <div class="tag">Social Impact</div>
+                <div class="tag">Mobile App</div>
+                <div class="tag" data-category="business">Business</div>
+                <div class="tag" data-category="web">Web</div>
+              </div>
+
+              <div class="separator"></div>
+
+              
+              <div >
+                <h3 class="h4 timeline-item-title">Objective</h3>  
+                <p class="timeline-text">
+                  To enhance customer service efficiency by integrating a chatbot into our e-commerce platform.
+                </p>
+              </div><br>
+
+              
+              <div >
+                <h3 class="h4 timeline-item-title">Project Status</h3>  
+                <div class="tags"><div class="tag">Complete</div></div>
+              </div><br>
+
+              
+
+              <div >
+                <h3 class="h4 timeline-item-title">Solution Implemented</h3>
+                <p class="timeline-text">
+                  Developed a chatbot capable of handling 50% of routine customer inquiries.
+                </p>
+              </div><br>
+
+              
+
+              <section class="techStack">
+                <h3 class="h4 timeline-item-title">Tech Stack used</h3>
+                <ul class="techStack-list has-scrollbar">
+                  <li class="techStack-item"><img src="./assets/images/python.jpg" alt="Python"></li>
+                  <li class="techStack-item"><img src="./assets/images/gcp.png" alt="GCP"></li>
+                  <li class="techStack-item"><img src="./assets/images/Zoho.png" alt="Zoho"></li>
+                </ul>
+              </section>
+
+            
+
+              <div >
+                <h3 class="h4 timeline-item-title">Impact</h3>
+                <p class="timeline-text">
+                  Reduced average customer wait time by 30% and increased customer satisfaction scores by 25%.
+                </p>
+              </div>
+
+
+              <div class="separator"></div>
+
+              
+              <div class="form-b">
+                <button id="showButtonlac" onclick="showDetails('lac')">Show Details</button>
+              </div>
+
+            
+             
+              <div id="projectDetailslac">
+                 
+                
+                <section class="service">
+
+                  <h3 class="h3 service-title">More Details:</h3>
+        
+                  <ul class="service-list">
+                    
+                    
+                    <li class="service-item">
+
+                      <div class="service-content-box service-list-1">
+
+                        <h4 class="h4 service-item-title">Roles and Responsibilities</h4> 
+        
+                          <div class="horizontal-container"> 
+                            
+                            <div class="horizontal-item" style="flex: 1;"> 
+                              <p class="timeline-text"><strong>Team Size:</strong> 8</p><br>
+                              <p class="timeline-text"><strong>Project Duration:</strong> 4 months</p><br>
+                              <p class="timeline-text"><strong>Organization:</strong> Acme Pune, India</p>
+                            </div>
+                            
+                            <div class="horizontal-item" style="flex: 2;"> 
+                              <h3 class="project-title-overview "><strong>My Responsibilities</strong></h3>
+                              <ul class="timeline-text">
+                                <li>-> Led the product team.</li>
+                                <li>-> Developed the chatbot architecture.</li>
+                                <li>-> Managed the integration of the chatbot with the e-commerce platform.</li>
+                              </ul>
+                            </div>
+                            
+                          </div>
+
+                          <div class="separator"></div>
+                          <h3 class="h4 timeline-item-title">Key Challenges faced</h3>
+
+                            <ul class="timeline-text">
+                              <li>->	Ensuring the chatbot could handle a wide range of customer inquiries.</li>
+                              <li>->	Managing the integration of the chatbot with the e-commerce platform.</li>
+                              <li>->	Analyzing customer feedback to improve the chatbot's performance.</li>
+                            </ul>
+                        
+                        
+                      </div>
+        
+                    </li>
+        
+                    
+                    <li class="service-item">
+
+                      <div class="service-content-box service-list-1">
+                        
+                        
+                        
+                        <h4 class="h4 service-item-title">My Solution</h4>
+
+                          <ul class="timeline-text">
+                            <li>->	Developed a chatbot capable of handling 50% of routine customer inquiries.</li>
+                            <li>->	Analyzed customer feedback to improve the chatbot's performance.</li>
+                            <li>->	Reduced average customer wait time by 30% and increased customer satisfaction scores by 25%.</li>
+                          </ul>
+
+                          <div class="separator"></div>
+                          <h3 class="h4 timeline-item-title">Inovation and Creativity</h3>
+
+                          <ul class="timeline-text">
+                            <li>->	Introduced natural language processing to improve the chatbot's ability to understand customer inquiries.</li>
+                            <li>->	Developed a sentiment analysis feature to gauge customer satisfaction with the chatbot.</li>
+                          </ul>
+
+                      </div>
+        
+                    </li>
+
+                    
+                    
+                    <li class="service-item">
+
+                      <div class="service-content-box service-list-1">
+
+                        <h4 class="h4 service-item-title"><strong>Results and Impact</strong></h4>
+                        
+                        <h3 class="h4 timeline-item-title">Outcome</h3>
+
+                        <ul class="timeline-text">
+                          <li>->	Reduced average customer wait time by 30% and increased customer satisfaction scores by 25%.</li>
+                        </ul>
+                        
+                        <div class="separator"></div>
+                        
+                        <h3 class="h4 timeline-item-title">Metric</h3>
+
+                          <ul class="timeline-text">
+                            <li>->	Monitored chatbot interaction success rate, customer service efficiency, and user satisfaction ratings.</li>
+                          </ul>
+
+                        <div class="separator"></div>
+                      
+                        <h3 class="h4 timeline-item-title">Feedback</h3>
+
+                          <ul class="timeline-text">
+                            <li>->	Received positive stakeholder feedback for project execution and outcomes.</li>
+                          </ul>
+
+                      </div>
+        
+                    </li>
+
+                    
+                    <li class="service-item">
+
+                      <div class="service-content-box service-list-1">
+                        
+                        <h4 class="h4 service-item-title">Professional Developement</h4>
+
+                        <ul class="timeline-text">
+                          <li>->	Gained proficiency in agile project management and deepened knowledge of AI applications in customer service.</li>
+
+                        </ul>
+
+
+                        <div class="separator"></div>
+                        
+                        <h3 class="h4 timeline-item-title">Insights Gained</h3>
+
+                        <ul class="timeline-text">
+                          <li>->	Learned the importance of aligning technology solutions closely with user expectations and business goals.</li>
+
+                        </ul>
+
+                          
+                      </div>
+        
+                    </li>
+        
+                  </ul>
+        
+                </section>
+
+
+                
+                <div class="form-b">
+                  <button id="hideButtonlac" onclick="hideDetails('lac')">Hide Details</button>
+                </div>
+                  
+              </div>
+              
+              <div class="separator"></div>
+              
+              </li> -->
           
+            <!-- Old data/Format of project: UI version 2, date - April 2024-->
+            
+            <!-- <li class="project-item  active" data-filter-item data-category="product management">
+           
+              <div class="horizontal-container">
+                <div class="horizontal-item" style="flex: 1;">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+  
+                    <img src="./assets/images/marketing.jpeg" alt="Marketing Analytics" loading="lazy">
+                  </figure>
+                    
+                    
+                </div>
+                <div class="horizontal-item" style="flex: 2;">
+                  <h3 class="project-title-overview ">Marketing Analytics</h3>
+                  
+                  <p class="project-category-overview ">Marketing Analytics for Lead Tracking</p>
+                  <p class="timeline-text">
+                    This project focused on marketing analytics and addressed a pressing issue within 
+                    the team— the lack of a robust lead tracking mechanism and insights into campaign 
+                    effectiveness. By seamlessly integrating data from Eloqua and Salesforce, we 
+                    crafted dynamic Marketing Funnel, Lead Journey, and Campaign Attribution Models. 
+                    We automated lead mapping with python, ensuring real-time efficiency. 
+                    We presented our solution in a Tableau-based marketing analytics dashboard, 
+                    providing an intuitive platform for lead funnel analysis, campaign effectiveness 
+                    metrics, and interactive lead journey visualizations. This poduct not only 
+                    transformed our approach to marketing analytics but also paved the way for 
+                    strategic decision-making and data-driven campaign planning for our sales team.
+                  </p>
+                </div>
+                
+               </div>
+
+              <div class="horizontal-container">
+                <div class="horizontal-item" style="flex: 1;">
+                    <h4 class="h4 timeline-item-title">Tools and Techniques Employed</h4>
+                    
+                      <techstacktag>•	Eloqua</locationtag><br>
+                      <techstacktag>•	Salesforce</locationtag><br>
+                      <techstacktag>•	Python Scripting</locationtag><br>
+                      <techstacktag>•	Tableau</locationtag><br>
+                      <techstacktag>•	Markov Chain Attribution Model</locationtag><br>
+                    
+                    
+                </div>
+                <div class="horizontal-item" style="flex: 2;">
+                  <h4 class="h4 timeline-item-title">Impact</h4>
+                    
+                <p class="timeline-text"> 
+                  Empowered the marketing team with a comprehensive view of campaign effectiveness 
+                  and lead nurturing, driving informed decision-making.
+                  </p>
+                </div>
+               
+              </div>
+
+              <div class="form-b">
+                <button id="showButtonMA" onclick="showDetails('MA')">Show Details</button>
+              </div>
+
+            
+
+              <div id="projectDetailsMA">
+                        
+                  <h3 class="h4 timeline-item-title">Solution</h3>
+
+                  <p class="timeline-text">We started with collating data from Eloqua and Salesforce to build Marketing Funnel, 
+                    Lead Journey, and Campaign Attribution Models.
+                  
+                  <p class="timeline-text">  Developed a Python script to automate lead mapping between Eloqua and Salesforce. 
+                    Implemented a Tableau-based marketing analytics dashboard, featuring lead funnel, campaign 
+                    effectiveness, and lead journey insights. </p>
+
+                  <h3 class="h4 timeline-item-title">Results</h3>
+
+              
+                  <ul class="timeline-text">
+                    <li>●	A Python script seamlessly mapping leads from Eloqua and Salesforce, providing real-time insights through a Tableau dashboard. Key features include lead funnel analysis, 
+                      campaign effectiveness assessment, and visualizing lead journeys.
+                    </li>
+                    <li>●	Revolutionized marketing analytics for FRR business unit, leveraging Eloqua and Salesforce data. Automated lead mapping, built insightful models, and conveyed predictive 
+                      and prescriptive analyses for marketing campaigns.
+                    </li>
+                    
+                  </ul>
+              
+                  
+                  <div class="form-b">
+                    <button id="hideButtonMA" onclick="hideDetails('MA')">Hide Details</button>
+                  </div>
+                  
+              </div>
+              
+              <div class="separator"></div>
+              
+              
+            
+               </li>        
+              -->
+
+            <!-- A very old format of project: UI version 1, date - Feb 2024-->
+
             <!-- <li class="project-item  active" data-filter-item data-category="data science">
               
 

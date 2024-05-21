@@ -618,6 +618,78 @@ main {
   line-height: 1.6;
 }
 
+.portfolio-intro {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.table-of-contents {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.table-of-contents h3 {
+  color: #2a2a2a;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.projects {
+  font-family: 'Poppins', sans-serif; /* Consistent font family */
+  color: var(--white-2);
+  background: var(--eerie-black-2);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-2);
+}
+
+.projects-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.projects-table th,
+.projects-table td {
+  text-align: left;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.projects-table th {
+  background-color: var(--jet);
+  color: var(--white-1);
+}
+
+.projects-table td {
+  background-color: var(--eerie-black-1);
+}
+
+.projects-table a {
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.projects-table a:hover {
+  color: var(--white-1);
+}
+
+/* Styling for the table header to add a modern touch */
+.projects-table thead tr {
+  background: var(--bg-gradient-yellow-1);
+  box-shadow: var(--shadow-1);
+}
+
+/* Hover effect for rows for better interactivity */
+.projects-table tbody tr:hover {
+  background-color: var(--dark-gray);
+  cursor: pointer;
+}
+
 
 /**
  * #testimonials 
@@ -1492,6 +1564,8 @@ textarea.form-input::-webkit-resizer { display: none; }
  */
 
 @media (min-width: 450px) {
+
+  
 
   /**
    * client
