@@ -1158,6 +1158,8 @@ main {
 
 .project-item { display: none;
   border: #333333;
+  margin-top: 10px;
+  
 }
 
 .project-item.active {
@@ -1260,33 +1262,7 @@ main {
   font-weight: var(--fw-300);
 }
 
-.project-item #projectDetailsLCA {
-  display: none;
-  margin-top: 20px;
-}
 
-.project-item #projectDetailsMA {
-  display: none;
-  margin-top: 20px;
-}
-
-.project-item #projectDetailsVOC {
-  display: none;
-  margin-top: 20px;
-}
-
-.project-item #projectDetailsPM {
-  display: none;
-  margin-top: 20px;
-}
-.project-item #projectDetailsPG {
-  display: none;
-  margin-top: 20px;
-}
-.project-item #projectDetailsFM {
-  display: none;
-  margin-top: 20px;
-}
 
 .project-item button {
   padding: 10px 15px;
@@ -1303,11 +1279,11 @@ main {
   background-color: var(--showmore-button-hover);
 }
 
-/* .project-item #projectDetailsPM h3 | li {
-  color: #D4AF37; 
+.project-item #projectDetailspmiu, #projectDetailslcncIU, #projectDetailsPM, #projectDetailslac {
+  display: none; 
 }
 
-.project-item #projectDetailsPM p {
+/* .project-item #projectDetailsPM p {
   color: #555555;
 } */
 
