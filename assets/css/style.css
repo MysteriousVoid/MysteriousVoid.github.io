@@ -1287,6 +1287,10 @@ article.projectDetails button {
   border-radius: 5px;
 }
 
+article.projectDetails button:hover {
+  background-color: var(--showmore-button-hover);
+  color: white;
+}
 
 .article-item button {
   padding: 10px 15px;
@@ -1301,6 +1305,7 @@ article.projectDetails button {
 
 .project-item button:hover {
   background-color: var(--showmore-button-hover);
+  color: white;
 }
 
 .project-item #projectDetailspmiu, #projectDetailslcncIU, #projectDetailsPM, #projectDetailslac {
@@ -1588,7 +1593,60 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
+/**
+  * responsive larger than 768px screen
+  * This is the screen size at which we can see two columns in portfolio section
+*/
+@media (max-width: 768px) {
+  .projects-table, .projects-table th, .projects-table td {
+    display: block;
+  }
 
+  .projects-table th {
+    display: none;
+  }
+
+  .projects-table td {
+    position: relative;
+    padding-left: 30vw;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    border: none; /* Remove top border */
+    text-align: right; /* Align text to the left */
+    font-style: italic; /* Make text italic */
+    font-size: 9; /* Reduce font size */
+    height: 12px; /* Set height */
+
+  }
+
+  .projects-table td:first-child {
+    border: 1px solid var(--light-gray); /* Border only for the first column */
+    border-radius: 8px 8px 8px 8px; /* Rounded corners */
+    font-style: normal; /* Make text normal */
+    font-size: initial; /* Reset font size */
+    height: auto; /* Reset height */
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
+
+  .projects-table td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 25vw;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-label);
+    color: var(--white-1);
+    background-color: transparent;
+    border-right: 1px solid var(--light-gray);
+  }
+
+  .projects-table tbody tr:hover {
+    background-color: var(--eerie-black-1);
+  }
+}
 
 
 
@@ -1962,7 +2020,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     transition: var(--transition-1);
   }
 
-  .filter-item button:hover { color: var(--light-gray-70); }
+  .filter-item button:hover { color: var(--light-gray-70);}
 
   .filter-item button.active { color: var(--orange-yellow-crayola); }
 

@@ -162,32 +162,112 @@ const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link with using data-target-page
 
+// for (let i = 0; i < navigationLinks.length; i++) {
+//   navigationLinks[i].addEventListener("click", function () {
+
+//     let found = false;
+
+//     for (let j = 0; j < pages.length; j++) {
+//       if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
+//         pages[j].classList.add("active");
+//         navigationLinks[i].classList.add("active");
+//         window.scrollTo(0, 0);
+//         found = true;
+//         break;
+//       } else {
+//         pages[j].classList.remove("active");
+//         navigationLinks[i].classList.remove("active");
+//       }
+//     }
+
+//     if (!found && this.dataset.targetPage) {
+//       for (let j = 0; j < pages.length; j++) {
+//         if (this.dataset.targetPage === pages[j].dataset.page) {
+//           pages[j].classList.add("active");
+//           navigationLinks[i].classList.add("active");
+//           window.scrollTo(0, 0);
+//           break;
+//         } 
+//       }
+//     }
+
+//   });
+// }
+
+// add event to all nav link
+// for (let i = 0; i < navigationLinks.length; i++) {
+//   navigationLinks[i].addEventListener("click", function () {
+
+//     // Hide all articles
+//     for (let j = 0; j < pages.length; j++) {
+//       pages[j].classList.remove("active");
+//       navigationLinks[i].classList.remove("active");
+//     }
+
+//     let found = false;
+
+//     // Try to find a page that matches the inner HTML of the button
+//     for (let j = 0; j < pages.length; j++) {
+//       if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
+//         pages[j].classList.add("active");
+//         navigationLinks[i].classList.add("active");
+//         window.scrollTo(0, 0);
+//         found = true;
+//         break;
+//       }
+//     }
+
+//     // If not found, try to find a page that matches the data-target-page attribute of the button
+//     if (!found && this.dataset.targetPage) {
+//       for (let j = 0; j < pages.length; j++) {
+//         if (this.dataset.targetPage === pages[j].dataset.page) {
+//           pages[j].classList.add("active");
+//           navigationLinks[i].classList.add("active");
+//           window.scrollTo(0, 0);
+//           break;
+//         }
+//       }
+//     }
+
+//   });
+// }
+
+// add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
+    // Remove "active" class from all navigation links
+    for (let j = 0; j < navigationLinks.length; j++) {
+      navigationLinks[j].classList.remove("active");
+    }
+
+    // Hide all articles
+    for (let j = 0; j < pages.length; j++) {
+      pages[j].classList.remove("active");
+    }
+
     let found = false;
 
+    // Try to find a page that matches the inner HTML of the button
     for (let j = 0; j < pages.length; j++) {
       if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
         pages[j].classList.add("active");
-        navigationLinks[i].classList.add("active");
+        this.classList.add("active");
         window.scrollTo(0, 0);
         found = true;
         break;
-      } else {
-        pages[j].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
       }
     }
 
+    // If not found, try to find a page that matches the data-target-page attribute of the button
     if (!found && this.dataset.targetPage) {
       for (let j = 0; j < pages.length; j++) {
         if (this.dataset.targetPage === pages[j].dataset.page) {
           pages[j].classList.add("active");
-          navigationLinks[i].classList.add("active");
+          this.classList.add("active");
           window.scrollTo(0, 0);
           break;
-        } 
+        }
       }
     }
 
