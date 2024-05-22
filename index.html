@@ -173,10 +173,6 @@
             <button class="navbar-link " data-nav-link>Portfolio</button>
           </li>
 
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li> -->
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
@@ -1010,157 +1006,13 @@
               <!-- Button to show the details | Make sure to keep this 'project_initials' unique on entire website. 
                 There are 5 instances of it for each project!
               In this templsate I have assumed project_initials as lac. So replace lac with that project's initials.-->
-            
+                
+              
+
               <div class="form-b">
-                <button id="showButtonpmiu" onclick="showDetails('pmiu')">Show Details</button>
+                <button class="navbar-link" data-nav-link>pdetails</button>
               </div>
 
-              <!-- Hidden block with details -->
-              <div id="projectDetailspmiu">
-                 
-                <!-- This will showcase data in data card format -->
-                <section class="service">
-
-                  <h3 class="h3 service-title">More Details:</h3>
-        
-                  <ul class="service-list">
-                    
-                    <!-- First item on the list | Roles and Responsbilities-->
-                    <li class="service-item">
-
-                      <div class="service-content-box service-list-1">
-
-                        <h4 class="h4 service-item-title">Roles and Responsibilities</h4>
-        
-                          <div class="horizontal-container"> <!-- This is the container for the roles and responsibilities-->
-                            
-                            <div class="horizontal-item" style="flex: 1;"> <!-- This is the first item in the container-->
-                              <p class="timeline-text"><strong>Team Size:</strong> 4</p><br>
-                              <p class="timeline-text"><strong>Project Duration:</strong> 1 year</p><br>
-                              <p class="timeline-text"><strong>Organization:</strong> Infinite Uptime, Pune, India</p>
-                            </div>
-                            
-                            <div class="horizontal-item" style="flex: 2;"> <!-- This is the second item in the container-->
-                              <h3 class="project-title-overview "><strong>My Responsibilities</strong></h3>
-                              <ul class="timeline-text"> <!-- This is the list of responsibilities-->
-                                <li>-> Was responsible for leading the development and integration of an automated diagnostics system to assess the health of the machine using latest Machine Learning techniques.</li>
-                                <li>-> Worked closely with the engineering team to incorporate emerging failure modes into the system.</li>
-                              </ul>
-                            </div>
-                            
-                          </div>
-
-                          <div class="separator"></div>
-                          <h3 class="h4 timeline-item-title">Key Challenges faced</h3>
-
-                            <ul class="timeline-text">
-                              <li>->	Developing new features from scratch to incorporate emerging failure modes into the system.</li>
-                              <li>->	Ensuring the model's accuracy and reliability in assessing the health of the machine.</li>
-                            </ul>
-                        
-                        
-                      </div>
-        
-                    </li>
-        
-                    <!-- Second item on the list | Key Challenges faced & Soltions-->
-                    <li class="service-item">
-
-                      <div class="service-content-box service-list-1">
-                        
-                        
-                        
-                        <h4 class="h4 service-item-title">My Solution</h4>
-
-                          <ul class="timeline-text">
-                            <li>-> First with the help of the engineering team, I developed a new feature to build the initial model to assess the health of the machine.</li>
-                            <li>-> Then I worked on incorporating the emerging failure modes into the system by developing a new feature.</li>
-                            </ul>
-
-                          <div class="separator"></div>
-                          <h3 class="h4 timeline-item-title">Inovation and Creativity</h3>
-
-                          <ul class="timeline-text">
-                            <li>->	Developed new features to incorporate emerging failure modes into the system, which increased the system's accuracy by 20%.</li>
-                          </ul>
-
-                      </div>
-        
-                    </li>
-
-                    <!-- Third item on the list | Results & Impact-->
-                    
-                    <li class="service-item">
-
-                      <div class="service-content-box service-list-1">
-
-                        <h4 class="h4 service-item-title"><strong>Results and Impact</strong></h4>
-                        
-                        <h3 class="h4 timeline-item-title">Outcome</h3>
-
-                        <ul class="timeline-text">
-                          <li>-> Successfully developed an automated diagnostics system to assess the health of the machine.</li>
-                          <li>-> Incorporated 2 new failure modes into the system.</li>
-                          </ul>
-                        
-                        <div class="separator"></div>
-                        
-                        <h3 class="h4 timeline-item-title">Metric</h3>
-
-                          <ul class="timeline-text">
-                            <li>->	Looked at the system's accuracy and reliability in assessing the best model. </li>
-                            <li>-> Compared the teams workload before and after the system was implemented.</li>
-                            </ul>
-
-                        <div class="separator"></div>
-                      
-                        <h3 class="h4 timeline-item-title">Feedback</h3>
-
-                          <ul class="timeline-text">
-                            <li>->	Engineering team was happy with the way the solution was developed incolboration with them.</li>
-                          </ul>
-
-                      </div>
-        
-                    </li>
-
-                    <!-- Fourth item on the list | Innovation & Creativity-->
-                    <li class="service-item">
-
-                      <div class="service-content-box service-list-1">
-                        
-                        <h4 class="h4 service-item-title">Professional Developement</h4>
-
-                        <ul class="timeline-text">
-                          <li>->	Learned the importance of aligning technology solutions closely with user expectations and business goals.</li>
-                          
-                        </ul>
-
-
-                        <div class="separator"></div>
-                        
-                        <h3 class="h4 timeline-item-title">Insights Gained</h3>
-
-                        <ul class="timeline-text">
-                          <li>->	Developed a deeper understanding of the importance of developing solutions that are user-centric and aligned with business goals.</li>
-                        </ul>
-
-                          
-                      </div>
-        
-                    </li>
-        
-                  </ul>
-        
-                </section>
-
-
-                <!-- Button to hide the details | This is shown inside the project details for better user experiance-->
-                <div class="form-b">
-                  <button id="hideButtonpmiu" onclick="hideDetails('pmiu')">Hide Details</button>
-                </div>
-                  
-              </div>
               
               <div class="separator"></div>
               
@@ -2746,7 +2598,225 @@
         
       </article>
 
-      
+      <article class="pdetails" data-page="pdetails">
+
+        <header>
+          <h2 class="h2 article-title">Predictive Maintenance</hheader>
+        </header>
+        
+        
+              <!-- Tags for the project | default color is green-->
+              <div class="tags">
+                <div class="tag">Industry 4.0</div>
+                <div class="tag">Machine Health</div>
+                <div class="tag" data-category="business">Worked at a startup</div>
+              </div>
+
+              <br>
+
+              <!-- Item 1 - Objective-->
+              <div >
+                <h3 class="h4 timeline-item-title">Objective</h3>  
+                <p class="timeline-text">
+                  To develop an automated diagnostics system to accurately assess the health of the machine.  
+                </p>
+              </div><br>
+
+              <!-- Item 2 - Project Status-->
+              <!-- <div >
+                <h3 class="h4 timeline-item-title">Project Status</h3>  
+                <div class="tags"><div class="tag">Complete</div></div>
+              </div><br> -->
+
+              <!-- Item 3 - Solution Implemented-->
+
+              <div >
+                <h3 class="h4 timeline-item-title">Solution Implemented</h3>
+                <p class="timeline-text">
+                  Engineered an automated diagnostics system utilizing Python to accurately assess the health of the machine, while also expanding the system's underlying logic to incorporate emerging failure modes.
+                </p>
+              </div><br>
+
+              <!-- Item 4 - Tech Stack Used-->
+
+              <section class="techStack">
+                <h3 class="h4 timeline-item-title">Tech Stack used</h3>
+                <ul class="techStack-list has-scrollbar">
+                  <li class="techStack-item"><img src="./assets/images/python.jpg" alt="Python"></li>
+                  <li class="techStack-item"><img src="./assets/images/gcp.png" alt="GCP"></li>
+                  <li class="techStack-item"><img src="./assets/images/Zoho.png" alt="Zoho"></li>
+                </ul>
+              </section>
+
+              
+              <!-- Item 5 - Impact -->
+
+              <div >
+                <h3 class="h4 timeline-item-title">Impact</h3>
+                <p class="timeline-text">
+                  Reduced the workload of the maintenance team by 30% and incorporated 2 new failure modes into the system.
+                </p>
+              </div>
+
+              <br>
+             
+
+              <!-- Button to show the details | Make sure to keep this 'project_initials' unique on entire website. 
+                There are 5 instances of it for each project!
+              In this templsate I have assumed project_initials as lac. So replace lac with that project's initials.-->
+                
+              <button class="navbar-link" data-nav-link>pdetails</button>
+
+              
+
+              <!-- Hidden block with details -->
+              <div id="projectDetailspmiu">
+                 
+                <!-- This will showcase data in data card format -->
+                <section class="service">
+
+                  <h3 class="h3 service-title">More Details:</h3>
+        
+                  <ul class="service-list">
+                    
+                    <!-- First item on the list | Roles and Responsbilities-->
+                    <li class="service-item">
+
+                      <div class="service-content-box service-list-1">
+
+                        <h4 class="h4 service-item-title">Roles and Responsibilities</h4>
+        
+                          <div class="horizontal-container"> <!-- This is the container for the roles and responsibilities-->
+                            
+                            <div class="horizontal-item" style="flex: 1;"> <!-- This is the first item in the container-->
+                              <p class="timeline-text"><strong>Team Size:</strong> 4</p><br>
+                              <p class="timeline-text"><strong>Project Duration:</strong> 1 year</p><br>
+                              <p class="timeline-text"><strong>Organization:</strong> Infinite Uptime, Pune, India</p>
+                            </div>
+                            
+                            <div class="horizontal-item" style="flex: 2;"> <!-- This is the second item in the container-->
+                              <h3 class="project-title-overview "><strong>My Responsibilities</strong></h3>
+                              <ul class="timeline-text"> <!-- This is the list of responsibilities-->
+                                <li>-> Was responsible for leading the development and integration of an automated diagnostics system to assess the health of the machine using latest Machine Learning techniques.</li>
+                                <li>-> Worked closely with the engineering team to incorporate emerging failure modes into the system.</li>
+                              </ul>
+                            </div>
+                            
+                          </div>
+
+                          <div class="separator"></div>
+                          <h3 class="h4 timeline-item-title">Key Challenges faced</h3>
+
+                            <ul class="timeline-text">
+                              <li>->	Developing new features from scratch to incorporate emerging failure modes into the system.</li>
+                              <li>->	Ensuring the model's accuracy and reliability in assessing the health of the machine.</li>
+                            </ul>
+                        
+                        
+                      </div>
+        
+                    </li>
+        
+                    <!-- Second item on the list | Key Challenges faced & Soltions-->
+                    <li class="service-item">
+
+                      <div class="service-content-box service-list-1">
+                        
+                        
+                        
+                        <h4 class="h4 service-item-title">My Solution</h4>
+
+                          <ul class="timeline-text">
+                            <li>-> First with the help of the engineering team, I developed a new feature to build the initial model to assess the health of the machine.</li>
+                            <li>-> Then I worked on incorporating the emerging failure modes into the system by developing a new feature.</li>
+                            </ul>
+
+                          <div class="separator"></div>
+                          <h3 class="h4 timeline-item-title">Inovation and Creativity</h3>
+
+                          <ul class="timeline-text">
+                            <li>->	Developed new features to incorporate emerging failure modes into the system, which increased the system's accuracy by 20%.</li>
+                          </ul>
+
+                      </div>
+        
+                    </li>
+
+                    <!-- Third item on the list | Results & Impact-->
+                    
+                    <li class="service-item">
+
+                      <div class="service-content-box service-list-1">
+
+                        <h4 class="h4 service-item-title"><strong>Results and Impact</strong></h4>
+                        
+                        <h3 class="h4 timeline-item-title">Outcome</h3>
+
+                        <ul class="timeline-text">
+                          <li>-> Successfully developed an automated diagnostics system to assess the health of the machine.</li>
+                          <li>-> Incorporated 2 new failure modes into the system.</li>
+                          </ul>
+                        
+                        <div class="separator"></div>
+                        
+                        <h3 class="h4 timeline-item-title">Metric</h3>
+
+                          <ul class="timeline-text">
+                            <li>->	Looked at the system's accuracy and reliability in assessing the best model. </li>
+                            <li>-> Compared the teams workload before and after the system was implemented.</li>
+                            </ul>
+
+                        <div class="separator"></div>
+                      
+                        <h3 class="h4 timeline-item-title">Feedback</h3>
+
+                          <ul class="timeline-text">
+                            <li>->	Engineering team was happy with the way the solution was developed incolboration with them.</li>
+                          </ul>
+
+                      </div>
+        
+                    </li>
+
+                    <!-- Fourth item on the list | Innovation & Creativity-->
+                    <li class="service-item">
+
+                      <div class="service-content-box service-list-1">
+                        
+                        <h4 class="h4 service-item-title">Professional Developement</h4>
+
+                        <ul class="timeline-text">
+                          <li>->	Learned the importance of aligning technology solutions closely with user expectations and business goals.</li>
+                          
+                        </ul>
+
+
+                        <div class="separator"></div>
+                        
+                        <h3 class="h4 timeline-item-title">Insights Gained</h3>
+
+                        <ul class="timeline-text">
+                          <li>->	Developed a deeper understanding of the importance of developing solutions that are user-centric and aligned with business goals.</li>
+                        </ul>
+
+                          
+                      </div>
+        
+                    </li>
+        
+                  </ul>
+        
+                </section>
+                
+                  
+              </div>
+              
+              <div class="separator"></div>
+
+              <div class="form-b">
+                <button class="navbar-link" data-nav-link>portfolio</button>
+              </div>
+   </article> 
        
       <!--
         - #CONTACT
