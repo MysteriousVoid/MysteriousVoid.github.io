@@ -1275,6 +1275,30 @@ main {
   border-radius: 5px;
 }
 
+article.projectDetails button {
+  /* Add your styles here */
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #43464A;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.article-item button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #43464A;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
 .project-item button:hover {
   background-color: var(--showmore-button-hover);
 }

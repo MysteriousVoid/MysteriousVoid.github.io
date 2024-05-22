@@ -140,18 +140,54 @@ for (let i = 0; i < formInputs.length; i++) {
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-// add event to all nav link
+// add event to all nav link | Old way
+// for (let i = 0; i < navigationLinks.length; i++) {
+//   navigationLinks[i].addEventListener("click", function () {
+
+//     for (let i = 0; i < pages.length; i++) {
+//       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
+//         pages[i].classList.add("active");
+//         navigationLinks[i].classList.add("active");
+//         window.scrollTo(0, 0);
+//       } else {
+//         pages[i].classList.remove("active");
+//         navigationLinks[i].classList.remove("active");
+//       }
+//     }
+
+//   });
+// }
+
+
+
+// add event to all nav link with using data-target-page
+
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
+    let found = false;
+
+    for (let j = 0; j < pages.length; j++) {
+      if (this.innerHTML.toLowerCase() === pages[j].dataset.page) {
+        pages[j].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
+        found = true;
+        break;
       } else {
-        pages[i].classList.remove("active");
+        pages[j].classList.remove("active");
         navigationLinks[i].classList.remove("active");
+      }
+    }
+
+    if (!found && this.dataset.targetPage) {
+      for (let j = 0; j < pages.length; j++) {
+        if (this.dataset.targetPage === pages[j].dataset.page) {
+          pages[j].classList.add("active");
+          navigationLinks[i].classList.add("active");
+          window.scrollTo(0, 0);
+          break;
+        } 
       }
     }
 
