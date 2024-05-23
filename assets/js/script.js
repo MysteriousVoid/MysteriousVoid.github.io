@@ -273,3 +273,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+document.getElementById("resumeButton").addEventListener("click", function() {
+  document.getElementById("resumedeatils").scrollIntoView({behavior: "smooth"});
+});

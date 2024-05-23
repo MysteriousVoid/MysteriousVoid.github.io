@@ -934,6 +934,35 @@ main {
 }
 
 
+/*-----------------------------------*\
+  #About me User persona
+\*-----------------------------------*/
+.about-section div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.about-section h3 {
+  font-size: var(--fs-6);
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.about-section .indented-list {
+  font-size: var(--fs-6);
+  margin-left: 45px;
+}
+
+.about-section .indented-list li {
+  color: var(--vegas-gold);
+  font-weight: var(--fw-400);
+  line-height: 1.3;
+}
+
+.about-section p {
+  color: var(--dark-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
 
 
 /*-----------------------------------*\
@@ -1263,6 +1292,22 @@ main {
 }
 
 
+article.about button {
+  /* Add your styles here */
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #43464A;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+article.about button:hover {
+  background-color: var(--showmore-button-hover);
+  color: white;
+}
 
 .project-item button {
   padding: 10px 15px;
@@ -1998,6 +2043,28 @@ textarea.form-input::-webkit-resizer { display: none; }
    * PORTFOLIO
    */
    
+   .portfolio-quote {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid var(--light-gray);
+    border-radius: 10px;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  .portfolio-quote p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+  }
+  
+  .portfolio-quote cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1em;
+    color: var(--white-1);
+    text-align:right;
+  }
   
 
   
