@@ -1082,7 +1082,13 @@ main {
   border-radius: 5px;
 }
 
-
+.timeline-text-feedback {
+  color: var(--dark-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  font-style: italic;
+  padding: 10px 0;
+}
 
 /**
  * skills 
