@@ -1072,6 +1072,17 @@ main {
   line-height: 1.6;
 }
 
+.timeline-jobdesc {
+  color: var(--dark-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  background-color: #f9f9f9; /* Very light gray */
+  padding: 15px;
+  font-style: regular;
+  border-radius: 5px;
+}
+
+
 
 /**
  * skills 
