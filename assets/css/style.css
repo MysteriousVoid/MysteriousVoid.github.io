@@ -620,6 +620,22 @@ main {
   line-height: 1.6;
 }
 
+.service-item-text-bullet {
+  color: var(--dark-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-3);
+  line-height: 1.6;
+}
+
+.service-item-text-bullet li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.service-item-text-bullet li:before {
+  content: "- ";
+}
+
 .portfolio-intro {
   margin-bottom: 20px;
   font-size: 16px;
@@ -946,6 +962,7 @@ main {
     border-radius: 10px;
     font-style: italic;
     text-align: center;
+    color: var(--dark-gray);
   }
   
   .portfolio-quote p {
@@ -1070,6 +1087,21 @@ main {
   color: var(--dark-gray);
   font-weight: var(--fw-300);
   line-height: 1.6;
+}
+
+.timeline-text-bullet {
+  color: var(--dark-gray);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.timeline-text-bullet li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.timeline-text-bullet li:before {
+  content: "- ";
 }
 
 .timeline-jobdesc {
